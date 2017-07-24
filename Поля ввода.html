@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Поля ввода</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+<!-- Тэг для создания различных форм(сообщений, логина, пароля и тд),но не отправки их. Отправка и обработка осуществляется за счет языка PHP  или любого другого серверного языка -->
+  <form name="test" action="sololearn.com" method="post"><!-- С помощью атрибута (name) позже мы сможем обращаться именно к этой форме;(action) указывает на вэб-страницу, которая должна загрузиться после отправки формы пользователем;(method) укащывает как отправляются данные("post"- анонимный, "get"- нет); -->
+    <label for="name">Текст(однострочный) </label>
+    <input type="text" placeholder="Имя..." name="name" id="name" maxlength="20" />
+    <!-- Само поле ввода. (type) указывает тип текстового поля.
+    (value) это то, что пишется в поле до нашего ввода(чтобы сделать ее самоубирающейся
+    при наводке надо ввести "plaseholder" вместо "value");(name) опять же позволяет
+    потом обращаться именно к этому полю; (maxlength) это максимальное кол-во
+    символом дозаоленное к вводу; (id) позволет использовать <label>
+    (когда мы в атрибуте (for) у тэга <label> пишем (id) этого поля, то при нажатии на надпись поле сразу активируется ) -->
+    <br /><br />
+
+    <label for="date">Дата </label>
+    <input type="date" id="date" name="date" ></input>
+    <br /><br />
+
+    <label for="url">URL </label>
+    <input type="url" id="url" name="url" />
+    <br /><br />
+
+    <input type="range" /><!-- Ползунок -->
+    <br /><br />
+
+    <label for="male">Man</label><input type="radio" name="sex" id="male"/><label for="wemale">Woman</label><input type="radio" name="sex" id="female"/>
+    <br /><br />
+
+    <label>Пароль </label><input type="password" />
+    <label>Прикрепите файлы </label><input type="file" />
+    <label>Цвет </label><input type="color" />
+    <label>Выбор вариантов</label><input type="checkbox" />
+    <br /><br />
+    <label>кнопка button(без перезагрузки, т.е. для JS)</label><input type="button" value="button" />
+    <br />
+    <label>кнопка submit(с перезагрузкой, т.е. для PHP)</label><input type="submit" value="Submit" />
+    <br />
+    <input type="reset" value="Очистить" /><!-- Очищает всю введенную информацию -->
+
+
+  </form>
+
+
+
+</body>
+</html>
