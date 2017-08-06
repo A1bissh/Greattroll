@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Тэги для HTML5</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+  <header>
+    <!--Возможно применение стилей непосредственно в тэг -->Шапка сайта)
+  </header>
+
+  <menu>
+    <li>Вареники</li>
+    <li>Паприка</li>
+    <li>Суп-харчо</li>
+  </menu>
+
+  <article>Статья, новость, пост или иное содержание</article>
+
+  <article>
+    <!-- Это аудио(controls="controls" отвечает за панель с музыкой.без этого будет просто пустое место)
+    (autoplay="autoplay"  автоматически включает мелодию при входе на сайт)
+    (loop="loop" зацикливает мелодию(при завершении включается вновь) )-->
+    <audio controls="controls">
+      <source src="http://goldenland.onfind.net/2/1/3.mp3" />
+    </audio>
+
+    <video controls="controls">
+      <source src="https://www.youtube.com/watch?v=a-dq0MsQ43I&index=17&list=PL0lO_mIqDDFUpe6yMyXAlcrfT6AO0KW1a" />
+    </video>
+
+    <details>
+      <summary>Заголовок раскрывающегося файла</summary>
+      <p>А сюда пишешь текст, который будет в выпадающей вкладке</p>
+    </details>
+
+    <p>Здесь идет текст<mark>, А этот выделен желтым,</mark> А это опять просто</p>
+
+    <ruby>
+      我<rt>wo</rt>
+      南<rt>nan</rt>
+    </ruby>
+
+    <progress max="100" value="76"><!-- Обычный, заранее подготовленный прогресс бар -->
+      Загружено на <span id="value">76</span>%<!-- текст отображается только в случае, если не работает тэг и не отображается сам прогресс бар -->
+    </progress>
+
+
+
+  </article>
+
+
+  <aside>Боковая панель.</aside>
+  <!-- не выносит в сторону, это делается с помощью стилей.Но они говорят об элементе браузеру-->
+
+  <footer><!-- возможно применение стилей -->Подвал сайта)</footer>
+
+</body>
+</html>
