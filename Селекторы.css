@@ -12,3 +12,9 @@
   .classname{
     color:rgb(0, 0, 255);
   }
+
+  -событийный(по наведению мыши)/* Это псевдокласс */
+    .classname:hover{
+      border: 10px solid #323232
+    }
+  
