@@ -13,6 +13,14 @@ p {
   box-shadow: 3px 3px 7px black;/* Тень от предмета. 1- сдвиг по ОХ. 2- сдвиг по ОУ. 3- Размытие тени. 4- цвет */
   width: 50%;/*ширина*/
   height: 50%;/*высота*/
-  
+  display: block;/* видимость элемента */
+  text-align: left;/* выравнивание текста */
+  font-weight: 400;/* жирность шрифта */
+  transform: rotate(90deg);/*scale(0.3). Трансформация элемента(rotate- вращать, scale- изменить размер)  */
+  transition: 5s "изменяемое свойство";/* время исполнения трансформа */
+
+  /* Ресурсы для изучения: 1- http://www.w3school.com/cssref , 2- http://www.ruseller.com/shporacss.php */
+
+
 
 }
